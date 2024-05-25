@@ -1,0 +1,53 @@
+.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    border-radius: 16.55px;
+    box-shadow: 0px 2.21px 14.9px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 119, 75);
+    color: rgb(255, 255, 255);
+    font-size: 12.46px;
+    font-weight: 400;
+    line-height: 19.93px;
+    letter-spacing: 0.42px;
+
+}
+
+.secondary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    box-sizing: border-box;
+    border: 0.87px solid rgb(224, 227, 235);
+    border-radius: 27.91px;
+
+    color: rgb(136, 139, 151);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24.42px;
+    letter-spacing: 0px;
+    padding: 10px 20px;
+
+    &:hover {
+        color: #F4A733;
+        border-radius: 27.91px;
+        background: rgb(255, 219, 170);
+
+        svg {
+            filter: brightness(0) saturate(100%) invert(57%) sepia(70%) saturate(539%) hue-rotate(351deg) brightness(97%) contrast(85%);
+        }
+    }
+}
+
+.thirdly-button {
+    
+
+    &.active {
+        color: #F4A733;
+        background-color: #FFDBAA;
+    }
+}

@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './components/header';
+@import './components/button';
+@import './components/input';
+@import './components/fonts';
+
+body {
+
+    button {
+        transition: 0.3s;
+    }
+
+    div {
+        transition: 0.3s;
+    }
+
+}
+.type {
+    cursor: pointer;
+
+    &.active {
+        .type_text {
+            color: #E6902A;
+        }
+        .type_line {
+            background: #E6902A;
+        }
+    }
+}
+
+.type:hover  {
+    .type_text {
+        color: #E6902A;
+    }
+    .type_line {
+        background: #E6902A;
+    }
+}
+
+
+
+
+.og {
+    .multi-range-slider .thumb::before {
+        box-shadow: none;
+        border: none;
+
+        border-radius: 15px;
+
+        background: rgb(255, 152, 0);
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .multi-range-slider .bar-inner {
+        box-shadow: none;
+        border: none;
+        background: rgb(255, 152, 0);
+        height: 2px;
+
+    }
+
+    .multi-range-slider .bar-left {
+        box-shadow: none;
+        border: none;
+        background: #888B97;
+        height: 2px;
+        padding: 0px;
+
+
+    }
+
+    .multi-range-slider .bar-right {
+        box-shadow: none;
+        border: none;
+        background: #888B97;
+        height: 2px;
+
+
+    }
+
+    .caption {
+        display: none;
+    }
+}
+
+.dashed {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.shadow {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(224, 224, 224, 1);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(224, 224, 224, 1);
+    box-shadow: 7px 7px 5px 0px rgba(224, 224, 224, 1);
+}
+
+.shadow_bottom {
+    box-shadow: 0px 11.23px 11.23px 0px rgba(176, 176, 176, 0.25);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &_bar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #36373D;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &.active {
+            color: #E6902A;
+
+            svg {
+                filter: brightness(0) saturate(100%) invert(57%) sepia(70%) saturate(539%) hue-rotate(351deg) brightness(97%) contrast(85%);
+            }
+        }
+
+        &:hover {
+            color: #E6902A;
+        }
+    }
+}
+
+.home {
+    &__main-background {
+        background: url(../../assets/image/home_main--background.jpeg) center no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .nav_bar {
+        color: rgb(255, 255, 255);
+
+        svg {
+            filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(3%) hue-rotate(161deg) brightness(103%) contrast(100%);
+        }
+    }
+}
+
+.new-buildings {
+    &__main-background {
+        background: url(../../assets/image/new-buildings_main--background.jpeg) center no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    &_sliderbg {
+        border-radius: 15px;
+        background: linear-gradient(135.56deg, rgb(230, 144, 42) -0.058%, rgb(236, 165, 81) 99.418%);
+    }
+}
+
+.main {
+    background: url(../image/Main.png) center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 120px);
+
+    &_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        gap: 24px;
+    }
+
+    &_search-circle {
+        width: 42px;
+        height: 42px;
+        background: rgb(240, 140, 0);
+        border-radius: 100%;
+        cursor: pointer;
+
+        position: absolute;
+        top: 7px;
+        bottom: 0;
+        right: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_search {
+        position: relative;
+        width: 100%;
+        max-width: 450px;
+    }
+}
