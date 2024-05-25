@@ -15,16 +15,16 @@ export const Header = ({ light }: any) => {
         <div className='header__inner'>
           <Link href={'/'} className='cursor-pointer'>{light ? <Logo /> : <LogoDark/>}</Link>
           <div className='nav'>
-            <Link href={'/new-buildings'} className={`nav_bar ${pathname?.toString()?.slice(0, 14) === '/new-buildings' ? 'active' : ''}`}>
+            <Link href={'/new-buildings'} className={`nav_bar hover:text-[#E6902A] ${pathname?.toString()?.slice(0, 14) === '/new-buildings' ? 'active' : ''}`}>
               <Navbar1 /> Новостройки
             </Link>
-            <Link href={'/map'} className={`nav_bar ${pathname === '/map' ? 'active' : ''}`}>
+            <Link href={'/map'} className={`nav_bar hover:text-[#E6902A] ${pathname === '/map' ? 'active' : ''}`}>
               <Navbar2 /> Карта
             </Link>
-            <Link href={'/builder-company'} className={`nav_bar ${pathname === '/builder-company' ? 'active' : ''}`}>
+            <Link href={'/builder-company'} className={`nav_bar hover:text-[#E6902A] ${pathname === '/builder-company' ? 'active' : ''}`}>
               <Navbar3 /> Застройщики
             </Link>
-            <div className={`nav_bar ${pathname === '' ? 'active' : ''}`}>
+            <div className={`nav_bar hover:text-[#E6902A] ${pathname === '' ? 'active' : ''}`}>
               <Navbar4 /> Поиск
             </div>
           </div>
