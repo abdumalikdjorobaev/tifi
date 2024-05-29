@@ -24,19 +24,19 @@ const Map = () => {
             <div className='text-2xl'>Выберите тип помещения</div>
             <div className='flex items-center justify-between w-[100%]'>
               <div onClick={() => setType(1)} className={`${type === 1 ? 'active' : ''} type text-sm font-bold w-[100%] flex flex-col gap-[11px]`}>
-                <div className={`type_text w-[100%] mx-[10px]`}>Склады</div>
+                <div className={`type_text w-[100%] ml-[10px]`}>Склады</div>
                 <div className={`type_line bg-[#CECECE] h-[2px] w-[100%]`}></div>
               </div>
               <div onClick={() => setType(2)} className={`${type === 2 ? 'active' : ''} type text-sm font-bold w-[100%] flex flex-col gap-[11px]`}>
-                <div className={`type_text w-[100%] mx-[10px]`}>Жилое</div>
+                <div className={`type_text w-[100%] ml-[10px]`}>Жилое</div>
                 <div className={`type_line bg-[#CECECE] h-[2px] w-[100%]`}></div>
               </div>
               <div onClick={() => setType(3)} className={`${type === 3 ? 'active' : ''} type text-sm font-bold w-[100%] flex flex-col gap-[11px]`}>
-                <div className={`type_text w-[100%] mx-[10px]`}>Коммерческое</div>
+                <div className={`type_text w-[100%] ml-[10px]`}>Коммерческое</div>
                 <div className={`type_line bg-[#CECECE] h-[2px] w-[100%]`}></div>
               </div>
               <div onClick={() => setType(4)} className={`${type === 4 ? 'active' : ''} type text-sm font-bold w-[100%] flex flex-col gap-[11px]`}>
-                <div className={`type_text w-[100%] mx-[10px]`}> Апартаменты</div>
+                <div className={`type_text w-[100%] ml-[10px]`}> Апартаменты</div>
                 <div className={`type_line bg-[#CECECE] h-[2px] w-[100%]`}></div>
               </div>
             </div>
