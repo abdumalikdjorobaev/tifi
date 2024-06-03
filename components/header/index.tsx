@@ -28,7 +28,7 @@ export const Header = ({ light }: any) => {
               <Navbar4 /> Поиск
             </div>
           </div>
-          <ButtonPrimary title='Мой Tifi'/>
+          <Link href={'/my-tifi'}><ButtonPrimary title='Мой Tifi'/></Link>
         </div>
       </div>
     </header>

@@ -71,7 +71,6 @@ export default function Home() {
           <div className="max-w-[1310px] w-[100%] mx-auto" >
             <div className="flex flex-col gap-[40px]">
               <div className="text-center text-3xl font-semibold text-[rgb(113,113,113)]">Почему выбирают нас</div>
-
               <div className="flex grid grid-cols-3 grid-rows-2 gap-[40px]">
                 <div className='shadow col-span-2 bg-[#F8F8F8] px-[64px] py-[40px] rounded-[28px] flex gap-[30px] items-center'>
                   <div className="w-[56%] flex flex-col gap-[15px]">

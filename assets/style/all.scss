@@ -17,7 +17,49 @@ body {
         transition: 0.3s;
     }
 
+    input {
+        outline: none;
+    }
+
+    img {}
+
+    .modal {
+        backdrop-filter: blur(4px);
+        background: rgba(255, 255, 255, 0.05);
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        right: 0px;
+        top: 0px;
+        left: 0px;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+
+
+        &_inner {
+           
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            height: 100vh;
+            padding-bottom: 10px;
+        }
+
+        &_content {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 876px;
+            height: 90vh;
+            box-shadow: -7px 0px 4px 0px rgba(0, 0, 0, 0.1);
+            /* Tifi white */
+            background: rgb(255, 255, 255);
+        }
+    }
 }
+
 .type {
     cursor: pointer;
 
@@ -25,16 +67,18 @@ body {
         .type_text {
             color: #E6902A;
         }
+
         .type_line {
             background: #E6902A;
         }
     }
 }
 
-.type:hover  {
+.type:hover {
     .type_text {
         color: #E6902A;
     }
+
     .type_line {
         background: #E6902A;
     }

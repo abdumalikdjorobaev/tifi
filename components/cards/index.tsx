@@ -186,7 +186,7 @@ export const DocumentItem = ({ item }: any) => {
                 <div className='  text-sm w-[80%] text-[#888B97]'>
                     Вы можете ознакомится с документами нажав на кнопку
                 </div>
-                <ButtonSecondary img={Document} title='Посмотреть' />
+                <ButtonSecondary onClick={() => {}} img={Document} title='Посмотреть' />
             </div>
         </div>
     )

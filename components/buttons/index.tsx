@@ -14,12 +14,13 @@ export const ButtonPrimary = ({ title }: ButtonPrimary) => {
 
 interface ButtonSecondary {
   img?: any,
-  title: string
+  title: string,
+  onClick?: any,
 }
 
-export const ButtonSecondary = ({ img, title }: ButtonSecondary) => {
+export const ButtonSecondary = ({ img, title, onClick }: ButtonSecondary) => {
   return (
-    <button className="secondary-button"><Image src={img} alt="" />{title}</button>
+    <button onClick={onClick(onClick)} className="secondary-button"><Image src={img} alt="" />{title}</button>
   )
 }
 
@@ -32,7 +33,6 @@ export const ButtonThirdly = ({ title }: ButtonThirdly) => {
     <button className='thirdly-button rounded-[8px] bg-[#EDEDED] text-[#000000D6]   text-sm px-[16px] py-[5px] cursor-pointer hover:text-[#F4A733] hover:bg-[#FFDBAA]'>{title}</button>
   )
 }
-
 
 
 
